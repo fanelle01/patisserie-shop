@@ -25,8 +25,8 @@ export default function NotreHistoire() {
           </h2>
           <p className="text-sm leading-relaxed mb-4"
             style={{ color: "var(--color-caramel)" }}>
-            Hurie's Delights est née d'une passion pour la pâtisserie 
-            et d'un désir de partager les saveurs authentiques du Cameroun. 
+            Hurie`s Delights est née d`une passion pour la pâtisserie 
+            et d`un désir de partager les saveurs authentiques du Cameroun. 
             Chaque gâteau, chaque donut, chaque beignet est préparé 
             à la main avec des ingrédients soigneusement choisis.
           </p>

@@ -52,7 +52,7 @@ export default function HeroCarousel() {
         </p>
         <h1 className="text-5xl font-bold mb-4"
           style={{ color: "var(--color-white)" }}>
-          Hurie's Delights
+          Hurie`s Delights
         </h1>
         <p className="text-lg mb-8"
           style={{ color: "var(--color-cream)" }}>

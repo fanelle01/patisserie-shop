@@ -13,7 +13,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" style={{ color: "var(--color-gold)" }}>
-          <span className="text-xl font-bold">Hurie's Delights</span>
+          <span className="text-xl font-bold">Hurie`s Delights</span>
         </Link>
 
         <div className="flex gap-6 items-center">

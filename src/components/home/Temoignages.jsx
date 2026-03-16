@@ -50,7 +50,7 @@ export default function Temoignages() {
             {/* Texte */}
             <p className="text-sm leading-relaxed mb-4"
               style={{ color: "var(--color-caramel)" }}>
-              "{temoignage.texte}"
+              `{ temoignage.texte}`
             </p>
 
             {/* Nom */}

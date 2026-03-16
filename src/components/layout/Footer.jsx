@@ -5,7 +5,7 @@ export default function Footer() {
 
         {/* Nom de la boutique */}
         <p className="text-lg font-bold" style={{ color: "var(--color-gold)" }}>
-          Hurie's Delights
+          Hurie`s Delights
         </p>
 
         {/* Slogan */}
@@ -15,7 +15,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="mt-4 text-xs" style={{ color: "var(--color-caramel)" }}>
-          © {new Date().getFullYear()} Hurie's Delights. Tous droits réservés.
+          © {new Date().getFullYear()} Hurie`s Delights. Tous droits réservés.
         </p>
 
       </div>
