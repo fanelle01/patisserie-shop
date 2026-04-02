@@ -49,69 +49,9 @@ export default function PageProduits() {
   return (
     <main className="py-16 px-4">
 
-      {/* Titre */}
-      <div className="text-center mb-12">
-        <p className="text-sm tracking-widest uppercase mb-2"
-          style={{ color: "var(--color-gold)" }}>
-          ✦ Fait maison ✦
-        </p>
-        <h1 className="text-4xl font-bold"
-          style={{ color: "var(--color-chocolate)" }}>
-          Nos Créations
-        </h1>
-        <p className="mt-3 text-sm"
-          style={{ color: "var(--color-caramel)" }}>
-          Découvrez toutes nos pâtisseries artisanales
-        </p>
-      </div>
-
-      {/* Les 3 cartes */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        {CATEGORIES.map((categorie) => (
-          <div
-            key={categorie.nom}
-            className="flex flex-col overflow-hidden rounded-sm shadow-md"
-            style={{ backgroundColor: "var(--color-white)" }}
-          >
-            {/* Photo */}
-            <div
-              className="h-56 bg-cover bg-center"
-              style={{ backgroundImage: `url(${categorie.photo})` }}
-            />
-
-            {/* Contenu */}
-            <div className="flex flex-col flex-1 p-5">
-              <h2 className="text-xl font-bold mb-2"
-                style={{ color: "var(--color-chocolate)" }}>
-                {categorie.nom}
-              </h2>
-              <p className="text-sm flex-1 mb-3"
-                style={{ color: "var(--color-caramel)" }}>
-                {categorie.description}
-              </p>
-              <p className="text-sm font-bold mb-4"
-                style={{ color: "var(--color-gold)" }}>
-                {categorie.prix}
-              </p>
-
-              {/* Bouton */}
-              <Link
-                href={categorie.lien}
-                className="text-center py-2 px-4 text-sm font-bold tracking-wider uppercase"
-                style={{
-                  backgroundColor: "var(--color-chocolate)",
-                  color: "var(--color-white)",
-                }}
-              >
-                Découvrir →
-              </Link>
-            </div>
-          </div>
-        ))}
-      </div>
-
+        
       {/* Barre de recherche */}
-      <div className="max-w-xl mx-auto mt-16">
+      <div className="max-w-xl mx-auto mb-16">
         <p className="text-center text-sm tracking-widest uppercase mb-4"
           style={{ color: "var(--color-gold)" }}>
           ✦ Rechercher un produit ✦
@@ -166,6 +106,64 @@ export default function PageProduits() {
             )}
           </div>
         )}
+      </div>
+
+
+      {/* Titre */}
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold"
+          style={{ color: "var(--color-chocolate)" }}>
+          Nos Créations
+        </h1>
+        <p className="mt-3 text-sm"
+          style={{ color: "var(--color-caramel)" }}>
+          Découvrez toutes nos pâtisseries artisanales
+        </p>
+      </div>
+
+      {/* Les 3 cartes */}
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        {CATEGORIES.map((categorie) => (
+          <div
+            key={categorie.nom}
+            className="flex flex-col overflow-hidden rounded-sm shadow-md"
+            style={{ backgroundColor: "var(--color-white)" }}
+          >
+            {/* Photo */}
+            <div
+              className="h-56 bg-cover bg-center"
+              style={{ backgroundImage: `url(${categorie.photo})` }}
+            />
+
+            {/* Contenu */}
+            <div className="flex flex-col flex-1 p-5">
+              <h2 className="text-xl font-bold mb-2"
+                style={{ color: "var(--color-chocolate)" }}>
+                {categorie.nom}
+              </h2>
+              <p className="text-sm flex-1 mb-3"
+                style={{ color: "var(--color-caramel)" }}>
+                {categorie.description}
+              </p>
+              <p className="text-sm font-bold mb-4"
+                style={{ color: "var(--color-gold)" }}>
+                {categorie.prix}
+              </p>
+
+              {/* Bouton */}
+              <Link
+                href={categorie.lien}
+                className="text-center py-2 px-4 text-sm font-bold tracking-wider uppercase"
+                style={{
+                  backgroundColor: "var(--color-chocolate)",
+                  color: "var(--color-white)",
+                }}
+              >
+                Découvrir →
+              </Link>
+            </div>
+          </div>
+        ))}
       </div>
 
     </main>
